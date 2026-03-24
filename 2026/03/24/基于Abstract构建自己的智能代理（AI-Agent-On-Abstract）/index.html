@@ -22,28 +22,44 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hack1t3r&#39;s Blog">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="本文主要目标为构建出Abstract网络上的智能代理，能够完成多种自动化任务，如：自动化签到、交易代币、聪明钱跟踪等。 前置条件操作系统：Windows 软件：OpenClaw、Vmware Workstation、Clash Verge 关键节点安装Ubuntu虚拟机 下载安装Vmware Workstation：https:&#x2F;&#x2F;www.vmware.com&#x2F;products&#x2F;desktop-h">
+<meta property="og:type" content="article">
+<meta property="og:title" content="基于Abstract构建自己的智能代理（AI Agent On Abstract）">
+<meta property="og:url" content="http://example.com/2026/03/24/%E5%9F%BA%E4%BA%8EAbstract%E6%9E%84%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E6%99%BA%E8%83%BD%E4%BB%A3%E7%90%86%EF%BC%88AI-Agent-On-Abstract%EF%BC%89/index.html">
 <meta property="og:site_name" content="Hack1t3r&#39;s Blog">
+<meta property="og:description" content="本文主要目标为构建出Abstract网络上的智能代理，能够完成多种自动化任务，如：自动化签到、交易代币、聪明钱跟踪等。 前置条件操作系统：Windows 软件：OpenClaw、Vmware Workstation、Clash Verge 关键节点安装Ubuntu虚拟机 下载安装Vmware Workstation：https:&#x2F;&#x2F;www.vmware.com&#x2F;products&#x2F;desktop-h">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/.%5C%E5%9F%BA%E4%BA%8EAbstract%E6%9E%84%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E6%99%BA%E8%83%BD%E4%BB%A3%E7%90%86%EF%BC%88AI-Agent-On-Abstract%EF%BC%89.assets%5Cimage-20260323121208123-1774239132927-1.png">
+<meta property="og:image" content="http://example.com/.%5C%E5%9F%BA%E4%BA%8EAbstract%E6%9E%84%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E6%99%BA%E8%83%BD%E4%BB%A3%E7%90%86%EF%BC%88AI-Agent-On-Abstract%EF%BC%89.assets%5Cimage-20260323125414532-1774241656599-3.png">
+<meta property="og:image" content="http://example.com/.%5C%E5%9F%BA%E4%BA%8EAbstract%E6%9E%84%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E6%99%BA%E8%83%BD%E4%BB%A3%E7%90%86%EF%BC%88AI-Agent-On-Abstract%EF%BC%89.assets%5Cimage-20260324150740542-1774336062315-5.png">
+<meta property="og:image" content="http://example.com/.%5C%E5%9F%BA%E4%BA%8EAbstract%E6%9E%84%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E6%99%BA%E8%83%BD%E4%BB%A3%E7%90%86%EF%BC%88AI-Agent-On-Abstract%EF%BC%89.assets%5Cp1059706.png">
+<meta property="og:image" content="http://example.com/.%5C%E5%9F%BA%E4%BA%8EAbstract%E6%9E%84%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E6%99%BA%E8%83%BD%E4%BB%A3%E7%90%86%EF%BC%88AI-Agent-On-Abstract%EF%BC%89.assets%5Cp1055860.png">
+<meta property="og:image" content="http://example.com/.%5C%E5%9F%BA%E4%BA%8EAbstract%E6%9E%84%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E6%99%BA%E8%83%BD%E4%BB%A3%E7%90%86%EF%BC%88AI-Agent-On-Abstract%EF%BC%89.assets%5Cp1050227.png">
+<meta property="og:image" content="http://example.com/.%5C%E5%9F%BA%E4%BA%8EAbstract%E6%9E%84%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E6%99%BA%E8%83%BD%E4%BB%A3%E7%90%86%EF%BC%88AI-Agent-On-Abstract%EF%BC%89.assets%5Cimage-20260324153801872-1774337884466-13.png">
+<meta property="og:image" content="http://example.com/.%5C%E5%9F%BA%E4%BA%8EAbstract%E6%9E%84%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E6%99%BA%E8%83%BD%E4%BB%A3%E7%90%86%EF%BC%88AI-Agent-On-Abstract%EF%BC%89.assets%5Cimage-20260324154424832-1774338266674-15.png">
+<meta property="og:image" content="http://example.com/.%5C%E5%9F%BA%E4%BA%8EAbstract%E6%9E%84%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E6%99%BA%E8%83%BD%E4%BB%A3%E7%90%86%EF%BC%88AI-Agent-On-Abstract%EF%BC%89.assets%5Cimage-20260324154542313-1774338344944-17.png">
+<meta property="og:image" content="http://example.com/.%5C%E5%9F%BA%E4%BA%8EAbstract%E6%9E%84%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E6%99%BA%E8%83%BD%E4%BB%A3%E7%90%86%EF%BC%88AI-Agent-On-Abstract%EF%BC%89.assets%5Cimage-20260324154754949-1774338476806-19.png">
+<meta property="article:published_time" content="2026-03-24T08:28:31.000Z">
+<meta property="article:modified_time" content="2026-03-24T08:40:46.826Z">
 <meta property="article:author" content="Hack1t3r">
+<meta property="article:tag" content="Technology(科技)">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/.%5C%E5%9F%BA%E4%BA%8EAbstract%E6%9E%84%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E6%99%BA%E8%83%BD%E4%BB%A3%E7%90%86%EF%BC%88AI-Agent-On-Abstract%EF%BC%89.assets%5Cimage-20260323121208123-1774239132927-1.png">
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="http://example.com/2026/03/24/%E5%9F%BA%E4%BA%8EAbstract%E6%9E%84%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E6%99%BA%E8%83%BD%E4%BB%A3%E7%90%86%EF%BC%88AI-Agent-On-Abstract%EF%BC%89/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'en'
   };
 </script>
 
-  <title>Hack1t3r's Blog</title>
+  <title>基于Abstract构建自己的智能代理（AI Agent On Abstract） | Hack1t3r's Blog</title>
   
 
 
@@ -180,9 +196,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
@@ -198,10 +215,9 @@
       <meta itemprop="name" content="Hack1t3r's Blog">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2026/03/24/%E5%9F%BA%E4%BA%8EAbstract%E6%9E%84%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E6%99%BA%E8%83%BD%E4%BB%A3%E7%90%86%EF%BC%88AI-Agent-On-Abstract%EF%BC%89/" class="post-title-link" itemprop="url">基于Abstract构建自己的智能代理（AI Agent On Abstract）</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          基于Abstract构建自己的智能代理（AI Agent On Abstract）
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -248,7 +264,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>本文主要目标为构建出Abstract网络上的智能代理，能够完成多种自动化任务，如：自动化签到、交易代币、聪明钱跟踪等。</p>
+        <p>本文主要目标为构建出Abstract网络上的智能代理，能够完成多种自动化任务，如：自动化签到、交易代币、聪明钱跟踪等。</p>
 <h2 id="前置条件"><a href="#前置条件" class="headerlink" title="前置条件"></a>前置条件</h2><p>操作系统：Windows</p>
 <p>软件：OpenClaw、Vmware Workstation、Clash Verge</p>
 <h2 id="关键节点"><a href="#关键节点" class="headerlink" title="关键节点"></a>关键节点</h2><h3 id="安装Ubuntu虚拟机"><a href="#安装Ubuntu虚拟机" class="headerlink" title="安装Ubuntu虚拟机"></a>安装Ubuntu虚拟机</h3><ol>
@@ -321,110 +337,33 @@
 </ol>
 <p>至此，独属于你的智能代理就创建好了！</p>
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+          <div class="post-tags">
+              <a href="/tags/Technology-%E7%A7%91%E6%8A%80/" rel="tag"># Technology(科技)</a>
+          </div>
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2025/02/11/test/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Hack1t3r">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hack1t3r's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2025/02/11/test/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2025-02-11 17:33:56" itemprop="dateCreated datePublished" datetime="2025-02-11T17:33:56+08:00">2025-02-11</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2025-02-13 15:30:19" itemprop="dateModified" datetime="2025-02-13T15:30:19+08:00">2025-02-13</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Others-%E5%85%B6%E5%AE%83/" itemprop="url" rel="index"><span itemprop="name">Others(其它)</span></a>
-                </span>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="Symbols count in article">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>38</span>
-            </span>
-            <span class="post-meta-item" title="Reading time">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>1 mins.</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;Welcome to my space!&quot;</span><br></pre></td></tr></table></figure>
+        
 
 
-      
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2025/02/11/test/" rel="prev" title="Hello World">
+      <i class="fa fa-chevron-left"></i> Hello World
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-
   
 
 
@@ -477,6 +416,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E7%BD%AE%E6%9D%A1%E4%BB%B6"><span class="nav-number">1.</span> <span class="nav-text">前置条件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B3%E9%94%AE%E8%8A%82%E7%82%B9"><span class="nav-number">2.</span> <span class="nav-text">关键节点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85Ubuntu%E8%99%9A%E6%8B%9F%E6%9C%BA"><span class="nav-number">2.1.</span> <span class="nav-text">安装Ubuntu虚拟机</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85OpenClaw"><span class="nav-number">2.2.</span> <span class="nav-text">安装OpenClaw</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9E%84%E5%BB%BA%E6%99%BA%E8%83%BD%E4%BB%A3%E7%90%86"><span class="nav-number">2.3.</span> <span class="nav-text">构建智能代理</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
